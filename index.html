@@ -9,69 +9,131 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+        img {
+            max-width: 100%;
+        }
+        img.cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        img.icon {
+            width: 60px;
+            height: 60px;
+        }
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        .mr-10 {
+            margin-right: 10px;
+        }
+        .box {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+        }
+        .flex {
+            display: flex !important;
+            align-items: center;
+        }
+        .black {
+            background-color: transparent !important;
+        }
+        .color-white {
+            color: #fff !important;
+        }
+        .color-main {
+            color: #303030 !important;
+        }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Madrobots</h1>
+        <p>Accessibility</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
-
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-                color: white;
-            }
-        </style>
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="next color-white">Так незрячие люди видят наш сайт</h2>
     </section>
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат</h2>
+        <audio src="audio/audio-1.mp3" autoplay></audio>
     </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат доступный сайт</h2>
+        <audio src="audio/audio-1.mp3" autoplay></audio>
     </section>
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+    <section class="slide black">
+        <div class="cover box flex">
+            <img class="cover" src="pictures/xd-screenshot-1.png" alt="">
         </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-2.png" alt="">
+        </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-3.png" alt="">
+        </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-4.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Что такое цифровая доступность?</h2>
+        <p class="next">Это обеспечение возможности использования сайтов как можно большим числом людей, включая тех, чьи способности как-либо ограничены.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Какие бывают виды нарушений?</h2>
+        <div class="next mb-20">
+            <div class="flex">
+                <img class="icon mr-10" src="pictures/icons/eye.png" alt="">
+                <span>Зрение</span>
+            </div>
+        </div>
+        <div class="next mb-20">
+            <div class="flex">
+                <img class="icon mr-10" src="pictures/icons/ear.png" alt="">
+                <span>Слух</span>
+            </div>
+        </div>
+        <div class="next mb-20">
+            <div class="flex">
+                <img class="icon mr-10" src="pictures/icons/hand.png" alt="">
+                <span>Опорно-двигательный аппарат</span>
+            </div>
+        </div>
+        <div class="next mb-20">
+            <div class="flex">
+                <img class="icon mr-10" src="pictures/icons/mental-health.png" alt="">
+                <span>Ментальное развитие</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Нахера, а главное зачем?</h2>
+        <ul>
+            <li class="next">Охватить большую аудиторию</li>
+            <li class="next"></li>
+            <li class="next">3</li>
+            <li class="next">Быть в тренде</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <ul>
+            <li class="next">Определиться с целесообразностью</li>
+        </ul>
     </section>
 
     <section class="slide">
@@ -177,6 +239,7 @@
             <li class="next">In secret from audience</li>
             <li class="next">But it will work only once</li>
             <li class="next">Nobody wants to see the same joke twice</li>
+            <img src="https://via.placeholder.com/150" class="next" alt="">
         </ol>
     </section>
 
