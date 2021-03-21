@@ -9,6 +9,9 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+        .shower .slide {
+            padding-top: 35px;
+        }
         img {
             max-width: 100%;
         }
@@ -46,7 +49,7 @@
             color: #303030 !important;
         }
         .css {
-            padding: 16px;
+            padding: 12px 16px;
             color: #24292e;
             border-radius: 6px;
             background-color: #f6f8fa;
@@ -56,6 +59,9 @@
         }
         .css .value {
             color: #032f62;
+        }
+        .small {
+            font-size: 18px;
         }
     </style>
 </head>
@@ -188,7 +194,8 @@
             <li class="next">3</li>
             <li class="next">Быть в тренде</li>
         </ul>
-        <!--    статистические данные-->
+        <!-- добавить статистические данные -->
+        <p class="next">По статистике 18% пользоватей имеют нарушения</p>
     </section>
 
     <section class="slide">
@@ -206,47 +213,61 @@
         </p>
         <s>Отвергаешь - предлагай</s>
         <span>Отключаешь - заменяй</span>
+    </section>
 
-        <!--    ариа атрибуты-->
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Семантические теги</p>
+        <div>
+            <span class="css">header</span>
+            <span class="css">footer</span>
+            <span class="css">nav</span>
+            <span class="css">main</span>
+        </div>
+        <br>
+        <div>
+            <span class="css">article</span>
+            <span class="css">section</span>
+            <span class="css">aside</span>
+            <span class="css">button</span>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Семантические теги</p>
+        <img src="/pictures/menu.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Семантические теги</p>
+        <img src="/pictures/div.png" alt="">
     </section>
 
 
     <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
+        <h2>И что делать?</h2>
+        <p>Атрибуты доступности</p>
+        <div class="next mb-20">
+            <span class="css">role</span>
+            <span class="small"> - banner, main, contentinfo, navigation, button</span>
+        </div>
+        <div class="next mb-20">
+            <span class="css">aria-label</span>
+            <span class="small"> - создаёт текстовую метку текущего элемента в случае отсутствия видимого текста</span>
+        </div>
+        <div class="next mb-20">
+            <span class="css">aria-labelledby</span>
+            <span class="small"> - создаёт связь между объектами и их метками</span>
+        </div>
+        <div class="next mb-20">
+            <span class="css">alt</span>
+            <span class="small"> - текстовое описание изображения</span>
+            <img src="/pictures/without-alt.png" alt="">
+        </div>
     </section>
+
 
     <section class="slide" id="picture">
         <h2>Pictures</h2>
@@ -268,23 +289,6 @@
     </section>
 
 
-
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
-    </section>
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>
