@@ -63,6 +63,9 @@
         .small {
             font-size: 18px;
         }
+        .slide.no-marker::after {
+            display: none;
+        }
     </style>
 </head>
 <body class="shower list">
@@ -250,10 +253,6 @@
         <h2>И что делать?</h2>
         <p>Атрибуты доступности</p>
         <div class="next mb-20">
-            <span class="css">role</span>
-            <span class="small"> - banner, main, contentinfo, navigation, button</span>
-        </div>
-        <div class="next mb-20">
             <span class="css">aria-label</span>
             <span class="small"> - создаёт текстовую метку текущего элемента в случае отсутствия видимого текста</span>
         </div>
@@ -268,26 +267,68 @@
         </div>
     </section>
 
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Ориентиры</p>
+        <div class="next mb-20">
+            <div class="next mb-20">
+                <span class="css">banner</span>
+                <span class="small"> - содержит ориентированный на сайт контент каждой страницы, например логотип, обычно расположенный вверху страницы. Только один экземпляр на странице</span>
+            </div>
+            <div class="next mb-20">
+                <span class="css">navigation</span>
+                <span class="small"> - навигационные ссылки для навигации по сайту или странице</span>
+            </div>
+            <div class="next mb-20">
+                <span class="css">main</span>
+                <span class="small"> - основное содержимое. Только один экземпляр на странице</span>
+            </div>
+            <div class="next mb-20">
+                <span class="css">contentinfo</span>
+                <span class="small"> - содержит контент, который обычно находится в нижнем колонтитуле страницы, например заявления об авторских правах и конфиденциальности. Только один экземпляр на странице</span>
+            </div>
+        </div>
     </section>
+
+    <section class="slide no-marker">
+        <div class="cover box flex" style="background: #fff;">
+            <img class="cover" src="pictures/landmarks.png" alt="" style="width: auto;">
+        </div>
+    </section>
+
+    <section class="slide no-marker">
+        <div class="cover box flex" style="background: #fff;">
+            <img class="cover" src="pictures/landmarks-true.png" alt="" style="width: auto;">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Заголовки</p>
+        <div class="next mb-20">
+            <span class="css">h1</span>
+            <span class="css">h2</span>
+            <span class="css">h3</span>
+            <span class="css">h4</span>
+            <span class="css">h5</span>
+            <span class="css">h6</span>
+        </div>
+        <div class="flex" style="align-items: flex-start">
+            <div class="next">
+                <p>Главная страница</p>
+                <img src="/pictures/heading.png" alt="">
+            </div>
+            <div class="next">
+                <p>Детальная страница товара</p>
+                <img src="/pictures/heading-2.png" alt="">
+            </div>
+        </div>
+    </section>
+
 
     <section class="slide">
         <h2 class="shout shrink">You can even shout this way</h2>
     </section>
-
 
 
     <footer class="badge">
