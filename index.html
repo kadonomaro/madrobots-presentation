@@ -9,193 +9,327 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+        .shower .slide {
+            padding-top: 35px;
+        }
+        img {
+            max-width: 100%;
+        }
+        img.cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        img.icon {
+            width: 60px;
+            height: 60px;
+        }
+        .mb-20 {
+            margin-bottom: 20px;
+        }
+        .mr-10 {
+            margin-right: 10px;
+        }
+        .box {
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+        }
+        .flex {
+            display: flex !important;
+            align-items: center;
+        }
+        .black {
+            background-color: transparent !important;
+        }
+        .color-white {
+            color: #fff !important;
+        }
+        .color-main {
+            color: #303030 !important;
+        }
+        .css {
+            padding: 12px 16px;
+            color: #24292e;
+            border-radius: 6px;
+            background-color: #f6f8fa;
+        }
+        .css .key {
+            color: #005cc5;
+        }
+        .css .value {
+            color: #032f62;
+        }
+        .small {
+            font-size: 18px;
+        }
+        .slide.no-marker::after {
+            display: none;
+        }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Madrobots</h1>
+        <p>Accessibility</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
-
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-                color: white;
-            }
-        </style>
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="next color-white">Так незрячие люди видят наш сайт</h2>
     </section>
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат</h2>
     </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат</h2>
+        <ul>
+            <li class="color-white">
+                <span>Навигацию</span>
+                <audio src="audio/nav-not-a11y.mp3" autoplay></audio>
+            </li>
+        </ul>
     </section>
 
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат</h2>
+        <ul>
+            <li class="color-white">
+                <span>Навигацию</span>
+            </li>
+            <li class="color-white">
+                <span>Карточку товара</span>
+                <audio src="audio/product-not-a11y.mp3" autoplay></audio>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат более доступный сайт</h2>
+    </section>
+
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат более доступный сайт</h2>
+        <ul>
+            <li class="color-white">
+                <span>Навигацию</span>
+                <audio src="audio/nav-a11y.mp3" autoplay></audio>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <div class="cover box"></div>
+        <h2 class="color-white">А так слышат более доступный сайт</h2>
+        <ul>
+            <li class="color-white">
+                <span>Навигацию</span>
+            </li>
+            <li class="color-white">
+                <span>Карточку товара</span>
+                <audio src="audio/product-a11y.mp3" autoplay></audio>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide black">
+        <div class="cover box flex">
+            <img class="cover" src="pictures/xd-screenshot-1.png" alt="">
+        </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-2.png" alt="">
+        </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-3.png" alt="">
+        </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-4.png" alt="">
+        </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-5.png" alt="">
+        </div>
+        <div class="cover box flex next">
+            <img class="cover" src="pictures/xd-screenshot-6.png" alt="">
         </div>
     </section>
 
     <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
+        <h2>Что такое цифровая доступность?</h2>
+        <p class="next">Это обеспечение возможности использования сайтов как можно большим числом людей, включая тех, чьи способности как-либо ограничены.</p>
     </section>
 
     <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
+        <h2>Какие бывают виды нарушений?</h2>
+        <div class="next mb-20">
+            <div class="flex">
+                <img class="icon mr-10" src="pictures/icons/eye.png" alt="">
+                <span>Зрение</span>
+            </div>
+        </div>
+        <div class="next mb-20">
+            <div class="flex">
+                <img class="icon mr-10" src="pictures/icons/ear.png" alt="">
+                <span>Слух</span>
+            </div>
+        </div>
+        <div class="next mb-20">
+            <div class="flex">
+                <img class="icon mr-10" src="pictures/icons/hand.png" alt="">
+                <span>Опорно-двигательный аппарат</span>
+            </div>
+        </div>
     </section>
 
     <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
+        <h2>Нахера, а главное зачем?</h2>
+        <ul>
+            <li class="next">Охватить большую аудиторию</li>
+            <li class="next"></li>
+            <li class="next">3</li>
+            <li class="next">Быть в тренде</li>
+        </ul>
+        <!-- добавить статистические данные -->
+        <p class="next">По статистике 18% пользоватей имеют нарушения</p>
     </section>
 
     <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
+        <h2>И что делать?</h2>
     </section>
 
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Никаких больше
+            <span class="css">
+                {
+                <span class="key">outline</span>: <span class="value">none;</span>
+                }
+            </span>
+        </p>
+        <s>Отвергаешь - предлагай</s>
+        <span>Отключаешь - заменяй</span>
     </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Семантические теги</p>
+        <div>
+            <span class="css">header</span>
+            <span class="css">footer</span>
+            <span class="css">nav</span>
+            <span class="css">main</span>
+        </div>
+        <br>
+        <div>
+            <span class="css">article</span>
+            <span class="css">section</span>
+            <span class="css">aside</span>
+            <span class="css">button</span>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Семантические теги</p>
+        <img src="/pictures/menu.png" alt="">
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Семантические теги</p>
+        <img src="/pictures/div.png" alt="">
+    </section>
+
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Атрибуты доступности</p>
+        <div class="next mb-20">
+            <span class="css">aria-label</span>
+            <span class="small"> - создаёт текстовую метку текущего элемента в случае отсутствия видимого текста</span>
+        </div>
+        <div class="next mb-20">
+            <span class="css">aria-labelledby</span>
+            <span class="small"> - создаёт связь между объектами и их метками</span>
+        </div>
+        <div class="next mb-20">
+            <span class="css">alt</span>
+            <span class="small"> - текстовое описание изображения</span>
+            <img src="/pictures/without-alt.png" alt="">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Ориентиры</p>
+        <div class="next mb-20">
+            <div class="next mb-20">
+                <span class="css">banner</span>
+                <span class="small"> - содержит ориентированный на сайт контент каждой страницы, например логотип, обычно расположенный вверху страницы. Только один экземпляр на странице</span>
+            </div>
+            <div class="next mb-20">
+                <span class="css">navigation</span>
+                <span class="small"> - навигационные ссылки для навигации по сайту или странице</span>
+            </div>
+            <div class="next mb-20">
+                <span class="css">main</span>
+                <span class="small"> - основное содержимое. Только один экземпляр на странице</span>
+            </div>
+            <div class="next mb-20">
+                <span class="css">contentinfo</span>
+                <span class="small"> - содержит контент, который обычно находится в нижнем колонтитуле страницы, например заявления об авторских правах и конфиденциальности. Только один экземпляр на странице</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide no-marker">
+        <div class="cover box flex" style="background: #fff;">
+            <img class="cover" src="pictures/landmarks.png" alt="" style="width: auto;">
+        </div>
+    </section>
+
+    <section class="slide no-marker">
+        <div class="cover box flex" style="background: #fff;">
+            <img class="cover" src="pictures/landmarks-true.png" alt="" style="width: auto;">
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>И что делать?</h2>
+        <p>Заголовки</p>
+        <div class="next mb-20">
+            <span class="css">h1</span>
+            <span class="css">h2</span>
+            <span class="css">h3</span>
+            <span class="css">h4</span>
+            <span class="css">h5</span>
+            <span class="css">h6</span>
+        </div>
+        <div class="flex" style="align-items: flex-start">
+            <div class="next">
+                <p>Главная страница</p>
+                <img src="/pictures/heading.png" alt="">
+            </div>
+            <div class="next">
+                <p>Детальная страница товара</p>
+                <img src="/pictures/heading-2.png" alt="">
+            </div>
+        </div>
+    </section>
+
 
     <section class="slide">
         <h2 class="shout shrink">You can even shout this way</h2>
     </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
-
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
-    </section>
 
     <footer class="badge">
         <a href="https://github.com/shower/shower">Fork me on GitHub</a>
